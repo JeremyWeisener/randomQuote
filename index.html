@@ -49,7 +49,7 @@
         alert("Data: " + data + "\nStatus: " + status);
     });
 });
-*/
+
 
 var response;
 $('#randQuote').click(function() {
@@ -65,8 +65,8 @@ function update(response) {
     console.log(response);
     console.log(response.quoteText);
     
-  /**$('#display').prepend('<pre>' + $('#response').html() + '</pre>');
-  $('#response').html(JSON.stringify(response));**/
+  $('#display').prepend('<pre>' + $('#response').html() + '</pre>');
+  $('#response').html(JSON.stringify(response));
 }
 
 function handleErr(jqxhr, textStatus, err) {
