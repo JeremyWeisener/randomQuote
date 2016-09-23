@@ -14,11 +14,11 @@ function update(response) {
     console.log(response);
     console.log(response.quoteText);
   
-  $('a#twitter-share').attr("href", "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + encodeURI(JSON.stringify(response.quoteText)) + " -" + encodeURI(JSON.stringify(response.quoteAuthor).replace(/["]+/g,"")));
+  $('a#twitter').attr("href", "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + encodeURI(JSON.stringify(response.quoteText)) + " -" + encodeURI(JSON.stringify(response.quoteAuthor).replace(/["]+/g,"")));
   
   var changeColor = colors[Math.floor(Math.random() * colors.length)];
   
-  $('body,#twitter-share,#randQuote').animate({backgroundColor: changeColor});
+  $('body,#twitter,#randQuote').animate({backgroundColor: changeColor});
  $('#display').animate({color: changeColor});
   
   
