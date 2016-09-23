@@ -21,7 +21,8 @@ function update(response) {
   $('body,#twitter-share,#randQuote').animate({backgroundColor: changeColor});
  $('#display').animate({color: changeColor});
   
-  //$('body').attr("background", colors[Math.floor(Math.random() * colors.length)]);
+  //uncommented below
+  $('body').attr("background", colors[Math.floor(Math.random() * colors.length)]);
   
   
   
