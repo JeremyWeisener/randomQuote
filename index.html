@@ -1,8 +1,7 @@
 <html>
 
     <head>
-        <script src="jQuery-1.3.0.js" async></script>
-        <script src="jQueryUI-1.12.0.js" async></script>
+
         <!--
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -10,7 +9,6 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-        <script src="stuff.js" async></script>
     </head>
 
 
@@ -43,39 +41,10 @@
         
     </body>
 
-    <script>
-    /**$("button").click(function(){
-    $.post("method=getQuote&key=457653&format=xml&lang=en", function(data, status){
-        alert("Data: " + data + "\nStatus: " + status);
-    });
-});
-
-
-var response;
-$('#randQuote').click(function() {
-  $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?")
-    .done(update)
-    .fail(handleErr);
-    console.log(response);
-});
-
-function update(response) {
-  $('span#quoteText').html(JSON.stringify(response.quoteText).replace(/["]+/g,""));
-  $('#author').html(JSON.stringify(response.quoteAuthor));
-    console.log(response);
-    console.log(response.quoteText);
-    
-  $('#display').prepend('<pre>' + $('#response').html() + '</pre>');
-  $('#response').html(JSON.stringify(response));
-}
-
-function handleErr(jqxhr, textStatus, err) {
-  console.log("Request Failed: " + textStatus + ", " + err);
-}
-
-
-    </script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://rawgithub.com/JeremyWeisener/weatherApp/master/jQueryUI-1.12.0.js" async></script>
+    <script src="jQueryUI-1.12.0.js" async></script>
+    <script src="https://rawgithub.com/JeremyWeisener/weatherApp/master/stuff.js"></script>
     
     
 </html>
